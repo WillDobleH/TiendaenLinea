@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Premium Lumina</title>
+    <meta name="description" content="Una tienda en línea elegante y moderna.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Lumina<span>.</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#products">Productos</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+        <div class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span id="cart-count">0</span>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1>Descubre la Elegancia</h1>
+            <p>Explora nuestra colección exclusiva de productos seleccionados cuidadosamente para ti.</p>
+            <button class="cta-btn" onclick="document.getElementById('products').scrollIntoView({behavior: 'smooth'})">Explorar Ahora</button>
+        </div>
+    </header>
+
+    <main id="products" class="products-section">
+        <h2 class="section-title">Nuestros Productos</h2>
+        <div class="product-grid" id="productGrid">
+            <!-- Los productos se cargarán dinámicamente con JavaScript -->
+        </div>
+    </main>
+
+    <footer id="contact" class="footer">
+        <p>&copy; 2026 Lumina. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
